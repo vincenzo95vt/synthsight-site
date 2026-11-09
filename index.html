@@ -1,24 +1,75 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SynthSight</title>
-<style>
-  body { font-family: system-ui, -apple-system, sans-serif; max-width: 720px; margin: 0 auto; padding: 48px 16px; line-height: 1.6; color: #1a1a1a; background: #fff; }
-  h1 { font-size: 2rem; margin-bottom: .25rem; }
-  .muted { color: #666; }
-  a { color: #1a1a1a; }
-</style>
+<title>The SynthSight — La frase del político, contra el dato</title>
+<meta name="description" content="SynthSight: noticias y frases políticas explicadas con datos verificados y fuentes citadas, en vídeos cortos y con tono sarcástico. @synthsight_">
+<meta name="theme-color" content="#D6EAF8">
+<link rel="icon" type="image/png" href="assets/synthsight-avatar.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="The SynthSight — La frase del político, contra el dato">
+<meta property="og:description" content="Noticias y frases políticas explicadas con datos verificados y fuentes citadas, en vídeos cortos.">
+<meta property="og:image" content="https://vincenzo95vt.github.io/synthsight-site/assets/synthsight-logo.png">
+<meta property="og:url" content="https://vincenzo95vt.github.io/synthsight-site/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>SynthSight</h1>
-<p class="muted">@synthsight_</p>
-<p>SynthSight publishes short, sourced explainer videos about news and current affairs in Spanish. This site hosts the legal pages of the private publishing tool that uploads SynthSight's own videos to its TikTok account after the creator reviews and approves each one.</p>
-<p>SynthSight publica vídeos breves y explicativos sobre noticias y actualidad, con fuentes citadas.</p>
-<ul>
-  <li><a href="terms.html">Terms of Service / Condiciones de uso</a></li>
-  <li><a href="privacy.html">Privacy Policy / Política de privacidad</a></li>
-</ul>
+<div class="wrap">
+
+  <header>
+    <img class="logo" src="assets/synthsight-logo.png" alt="The SynthSight">
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-text">
+        <h1 class="headline">La frase del político, contra el dato.</h1>
+        <p class="subtext">Divulgación política en castellano: verificamos lo que dicen con fuentes primarias. Sin complacencia.</p>
+      </div>
+      <div class="hero-avatar" aria-hidden="true">
+        <div class="hero-avatar-box">
+          <img src="assets/synthsight-avatar.svg" alt="" class="hero-avatar-img">
+        </div>
+      </div>
+    </div>
+
+    <nav class="cta" aria-label="Síguenos">
+      <a class="btn" href="https://www.instagram.com/synthsight_/" target="_blank" rel="noopener">Instagram</a>
+      <a class="btn btn--outline btn--tiktok" href="TODO_URL_TIKTOK" target="_blank" rel="noopener">TikTok</a>
+      <a class="btn btn--linkedin" href="TODO_URL_LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+
+    <section class="block">
+      <span class="tag-bar">Cómo trabajamos</span>
+      <ul class="rules">
+        <li><span class="num">01</span><span class="rule-text">Partimos de fuentes primarias: BOE, INE, organismos oficiales.</span></li>
+        <li><span class="num">02</span><span class="rule-text">Cada vídeo cita sus fuentes, sin excepción.</span></li>
+        <li><span class="num">03</span><span class="rule-text">Distinguimos lo confirmado de lo que es versión de una parte.</span></li>
+        <li><span class="num">04</span><span class="rule-text">Si un titular es falso, lo desmentimos aunque no nos convenga.</span></li>
+      </ul>
+    </section>
+
+    <div class="stamp-wrap">
+      <span class="stamp">Datos &gt; Titulares</span>
+    </div>
+  </main>
+
+  <footer>
+    <p class="handle">@synthsight_</p>
+    <p><a href="mailto:info@vinnievasta.com">info@vinnievasta.com</a></p>
+    <p class="footer-links">
+      <a href="terms.html">Terms</a><span class="sep">·</span><a href="privacy.html">Privacy</a>
+    </p>
+    <p>&copy; <span id="year">2026</span> The SynthSight</p>
+  </footer>
+
+</div>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
